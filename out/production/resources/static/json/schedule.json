@@ -1,0 +1,227 @@
+{
+    "schedule": {
+      "1": {
+        "9:00 am": "Meeting with Client A",
+        "11:00 am": "Phone call with Vendor B",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "2": {
+        "9:00 am": "Client A Follow-up",
+        "10:00 am": "Meeting with HR",
+        "12:00 pm": "Lunch",
+        "2:00 pm": "Product Development Discussion",
+        "4:00 pm": "Marketing Strategy Meeting",
+        "7:00 pm": "Dinner with family"
+      },
+      "3": {
+        "9:00 am": "New Project Kick-off Meeting",
+        "11:00 am": "Phone call with Investor C",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "4": {
+        "9:00 am": "Client A Follow-up",
+        "11:00 am": "Meeting with Finance Team",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Product Design Review",
+        "5:00 pm": "Marketing Analysis Discussion"
+      },
+      "5": {
+        "9:00 am": "Meeting with Client A",
+        "11:00 am": "Phone call with Vendor B",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "6": {
+        "9:00 am": "Client A Follow-up",
+        "10:00 am": "Meeting with HR",
+        "12:00 pm": "Lunch",
+        "2:00 pm": "Product Development Discussion",
+        "4:00 pm": "Marketing Strategy Meeting",
+        "7:00 pm": "Dinner with family"
+      },
+      "7": {
+        "9:00 am": "New Project Kick-off Meeting",
+        "11:00 am": "Phone call with Investor C",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "8": {
+        "9:00 am": "Client A Follow-up",
+        "11:00 am": "Meeting with Finance Team",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Product Design Review",
+        "5:00 pm": "Marketing Analysis Discussion"
+      },
+      "9": {
+        "9:00 am": "New Project Kick-off Meeting",
+        "11:00 am": "Phone call with Investor C",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "10": {
+        "9:00 am": "Client A Follow-up",
+        "11:00 am": "Meeting with Finance Team",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Product Design Review",
+        "5:00 pm": "Marketing Analysis Discussion"
+      },
+      "11": {
+        "9:00 am": "Meeting with Client A",
+        "11:00 am": "Phone call with Vendor B",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "12": {
+        "9:00 am": "Client A Follow-up",
+        "10:00 am": "Meeting with HR",
+        "12:00 pm": "Lunch",
+        "2:00 pm": "Product Development Discussion",
+        "4:00 pm": "Marketing Strategy Meeting",
+        "7:00 pm": "Dinner with family"
+      },
+      "13": {
+        "9:00 am": "New Project Kick-off Meeting",
+        "11:00 am": "Phone call with Investor C",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "14": {
+        "9:00 am": "Client A Follow-up",
+        "11:00 am": "Meeting with Finance Team",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Product Design Review",
+        "5:00 pm": "Marketing Analysis Discussion"
+      },
+      "15": {
+        "9:00 am": "Meeting with Client A",
+        "11:00 am": "Phone call with Vendor B",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "16": {
+        "9:00 am": "Client A Follow-up",
+        "10:00 am": "Meeting with HR",
+        "12:00 pm": "Lunch",
+        "2:00 pm": "Product Development Discussion",
+        "4:00 pm": "Marketing Strategy Meeting",
+        "7:00 pm": "Dinner with family"
+      },
+      "17": {
+        "9:00 am": "New Project Kick-off Meeting",
+        "11:00 am": "Phone call with Investor C",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "18": {
+        "9:00 am": "Client A Follow-up",
+        "11:00 am": "Meeting with Finance Team",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Product Design Review",
+        "5:00 pm": "Marketing Analysis Discussion"
+      },
+      "19": {
+        "9:00 am": "New Project Kick-off Meeting",
+        "11:00 am": "Phone call with Investor C",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "20": {
+        "9:00 am": "Client A Follow-up",
+        "11:00 am": "Meeting with Finance Team",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Product Design Review",
+        "5:00 pm": "Marketing Analysis Discussion"
+      },
+      "21": {
+        "9:00 am": "Meeting with Client A",
+        "11:00 am": "Phone call with Vendor B",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "22": {
+        "9:00 am": "Client A Follow-up",
+        "10:00 am": "Meeting with HR",
+        "12:00 pm": "Lunch",
+        "2:00 pm": "Product Development Discussion",
+        "4:00 pm": "Marketing Strategy Meeting",
+        "7:00 pm": "Dinner with family"
+      },
+      "23": {
+        "9:00 am": "New Project Kick-off Meeting",
+        "11:00 am": "Phone call with Investor C",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "24": {
+        "9:00 am": "Client A Follow-up",
+        "11:00 am": "Meeting with Finance Team",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Product Design Review",
+        "5:00 pm": "Marketing Analysis Discussion"
+      },
+      "25": {
+        "9:00 am": "Meeting with Client A",
+        "11:00 am": "Phone call with Vendor B",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "26": {
+        "9:00 am": "Client A Follow-up",
+        "10:00 am": "Meeting with HR",
+        "12:00 pm": "Lunch",
+        "2:00 pm": "Product Development Discussion",
+        "4:00 pm": "Marketing Strategy Meeting",
+        "7:00 pm": "Dinner with family"
+      },
+      "27": {
+        "9:00 am": "New Project Kick-off Meeting",
+        "11:00 am": "Phone call with Investor C",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "28": {
+        "9:00 am": "Client A Follow-up",
+        "11:00 am": "Meeting with Finance Team",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Product Design Review",
+        "5:00 pm": "Marketing Analysis Discussion"
+      },
+      "29": {
+        "9:00 am": "New Project Kick-off Meeting",
+        "11:00 am": "Phone call with Investor C",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Team Meeting",
+        "5:00 pm": "Wrap up project report"
+      },
+      "30": {
+        "9:00 am": "Client A Follow-up",
+        "11:00 am": "Meeting with Finance Team",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Product Design Review",
+        "5:00 pm": "Marketing Analysis Discussion"
+      },
+      "31": {
+        "9:00 am": "Client A Follow-up",
+        "11:00 am": "Meeting with Finance Team",
+        "1:00 pm": "Lunch",
+        "3:00 pm": "Product Design Review",
+        "5:00 pm": "Marketing Analysis Discussion"
+    }
+}
+}
