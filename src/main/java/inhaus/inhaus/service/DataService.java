@@ -71,7 +71,7 @@ public class DataService {
     public List<Data> crawlData() throws InterruptedException {
 
         // ChromeDriver 경로 설정
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Park\\Desktop\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "크롬 드라이버 경로를 입력하세요");
 
         // WebDriver 옵션 설정
         ChromeOptions options = new ChromeOptions();
@@ -89,8 +89,8 @@ public class DataService {
         Thread.sleep(2000); // 페이지 로딩 대기 시간 주기.
 
         // 아이디/비밀번호 입력
-        driver.findElement(By.name("user_id")).sendKeys("아이디");
-        driver.findElement(By.name("user_password")).sendKeys("비밀번호");
+        driver.findElement(By.name("user_id")).sendKeys("아이디를 입력하세요");
+        driver.findElement(By.name("user_password")).sendKeys("비밀번호를 입력하세요");
 
         // 로그인 버튼 클릭
         driver.findElement(By.cssSelector("input[type='button'][onclick='doLogin()']")).click();
@@ -109,7 +109,7 @@ public class DataService {
         // 반환할 Data들의 리스트 생성.
         List<Data> datas = new ArrayList<>();
 
-        for(int i = now.getMonthValue(); i <= 6; i++) {
+        for(int i = 1; i <= 12; i++) { //now.getMonthValue()를 이용해서 현재 월부터 추출도 가능.
             String Month = i + "월";
             driver.get("https://ins2.inha.ac.kr/ITIS/ADM/SS/SS_04002/UseSearch_Pop.aspx?EquipCode=");
             driver.findElement(By.name("ddlYear")).sendKeys("2023");
@@ -135,9 +135,30 @@ public class DataService {
             if (matcher.find()) {
                 value = matcher.group(1);
             }
-
-            driver.get("https://ins2.inha.ac.kr/ITIS/ADM/SS/SS_04002/ReservationView_xml.aspx?Value=" + value);
-            Thread.sleep(5000);
+            if(i == 4){ // 4, 7, 10, 11, 12월은 어째서인지 값이 추출이 안됨. 그래서 직접 주소를 따옴.
+                driver.get("https://ins2.inha.ac.kr/ITIS/ADM/SS/SS_04002/ReservationView_xml.aspx?Value=%252fTY0ZAUJtFZp28repOxRNeqbbywQT1uW%252bvC5tXnLwx8eojQ7CnoNgg%253d%253d");
+                Thread.sleep(2000);
+            }
+            else if(i == 7){
+                driver.get("https://ins2.inha.ac.kr/ITIS/ADM/SS/SS_04002/ReservationView_xml.aspx?Value=2t%252bn8zLkRE2a2V43q%252fJk2KFCiVk75nQRa8GbnfQrogpYH%252blnDSf%252bMA%253d%253d");
+                Thread.sleep(2000);
+            }
+            else if(i == 10){
+                driver.get("https://ins2.inha.ac.kr/ITIS/ADM/SS/SS_04002/ReservationView_xml.aspx?Value=Lf2qHn1IRzSK%252bXUQDPeLGds1oOTnzyz3ay3HkhNJBrqU5ImSnU%252fTcQ%253d%253d");
+                Thread.sleep(2000);
+            }
+            else if(i == 11){
+                driver.get("https://ins2.inha.ac.kr/ITIS/ADM/SS/SS_04002/ReservationView_xml.aspx?Value=mytxBVZriM%252bph1flZ5YB5TnLTryMJa%252br75EDSbBNwQp%252btzIRlcO73A%253d%253d");
+                Thread.sleep(2000);
+            }
+            else if(i == 12){
+                driver.get("https://ins2.inha.ac.kr/ITIS/ADM/SS/SS_04002/ReservationView_xml.aspx?Value=ZrZsi2b99mTc4nxslxYNrihbQ5SnvOa%252b9HgONRn5zesOPSwpc9M0Uw%253d%253d");
+                Thread.sleep(2000);
+            }
+            else {
+                driver.get("https://ins2.inha.ac.kr/ITIS/ADM/SS/SS_04002/ReservationView_xml.aspx?Value=" + value);
+                Thread.sleep(2000);
+            }
 
             // ****페이지 이동 종료****
 
