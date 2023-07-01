@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <script src="/js/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="manifest" href="/json/manifest.json" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <meta http-equiv=" X-UA-Compatible" content="ie=chrome" />
+    <title>INHAUS</title>
+    <style>
+      body {
+        background-color: #dbeefb;
+      }
+      @font-face {
+        font-family: 'CookieRun';
+        src: url("/CookieRunRegular.otf") format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      p {
+        width: 600px;
+        border-radius: 5px;
+        background-color: whitesmoke;
+        margin-bottom: 10px;
+        margin-left: 50px;
+      }
+      h1 {
+        color: #005bec;
+        font-size: 20px;
+        text-align: center;
+      }
+      .color-primary {
+        color: #005bec;
+      }
+      button {
+        background-color: lightgray;
+        color: white;
+        width: 80px;
+        padding: 10px 20px;
+        border: transparent;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgb(226, 223, 223);
+      }
+      body {
+        font-size: 2rem;
+      }
+      .button-pic {
+        border-style: none;
+        background-color: transparent;
+      }
+      img {
+        object-fit: cover;
+      }
+
+      .box {
+        padding: 10px;
+        height: 100px;
+      }
+      #Mom-box {
+        margin: 10px;
+        width: 1300px;
+        align-content: center;
+      }
+      #left-box-1 {
+        height: 600px;
+        width: 400px;
+        margin-left: 50px;
+        background-color: #dbeefb;
+        float: left;
+        border-radius: 20px;
+        justify-content: center;
+      }
+      #right-box-out {
+        height: 600px;
+        width: 700px;
+        background-color: #dbeefb;
+        float: right;
+        border-radius: 0px
+      }
+      #right-box-in {
+        height: 550px;
+        width: 700px;
+        background-color: rgb(219, 218, 218);
+        float: right;
+        border-radius: 20px;
+        justify-content: center;
+      }
+      /*==================*/
+      .wrap {
+        width: 250px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+      }
+
+      .login {
+        width: 220px;
+        height: 170px;
+        background: #00afec;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .login_id {
+        margin-top: 0px;
+        width: 180px;
+      }
+
+      .login_id input {
+        width: 80%;
+        height: 30px;
+        border-radius: 30px;
+        margin-top: 10px;
+        padding: 0px 20px;
+        border: 1px solid lightgray;
+        outline: none;
+      }
+
+      .login_pw {
+        margin-top: 5px;
+        width: 180px;
+      }
+
+      .login_pw input {
+        width: 80%;
+        height: 30px;
+        border-radius: 30px;
+        margin-top: 10px;
+        padding: 0px 20px;
+        border: 1px solid lightgray;
+        outline: none;
+      }
+
+      .login_etc {
+        padding: 10px;
+        width: 100%;
+        font-size: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+      }
+
+      .submit {
+        margin-bottom: 0px;
+        width: 180px;
+      }
+      .submit input {
+        width: 100%;
+        height: 30px;
+        border: 0;
+        outline: none;
+        border-radius: 40px;
+        background: #4c5c9f;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 2px;
+      }
+      .shield {
+        width: 120px;
+        height: 120px;
+        background-color: whitesmoke;
+        display: flex;
+        border: solid black;
+        border-radius: 20px;
+        margin-top: 40px;
+        align-items: center;
+        justify-content: center;
+        float: right;
+      }
+      .schedule {
+        display: inline-block;
+        margin-left: 5%;
+        width: 380px;
+        height: 400px;
+        border-radius: 20px;
+        background-color: #005bec;
+      }
+    </style>
+    <h1>
+      <img postiion : relative; src="/images/title.png" object-fit="cover;" />
+    </h1>
+  </head>
+
+  <body>
+    <!-- Main-->
+    <div id="Mom-box" class="box">
+      <!--Left area-->
+      <div id="left-box-1" class="box">
+        <div class="box">
+          <div class="wrap">
+            <div class="login">
+              <div class="login_id">
+                <input type="email" name="" id="" placeholder="Email" />
+              </div>
+              <div class="login_pw">
+                <input type="password" name="" id="" placeholder="Password" />
+              </div>
+              <div class="submit">
+                <input type="submit" value="로그인" />
+              </div>
+            </div>
+          </div>
+          <div class="shield">소속</div>
+        </div>
+        <div class="schedule"></div>
+      </div>
+      <!--Right-box area-->
+      <div id="right-box-out" class="box">
+        <button onclick="LoadCalendar();">CAL</button>
+        <button onclick="LoadSchedule();">DAY</button>
+        <div id="right-box-in" class="box">
+          <div id="Content" style="font-family: CookieRun">
+            <p id="TdayTitle" class="Title" ></p>
+            <p id="TdayContents" style="font-family: CookieRun"></p>
+          </div>
+        </div>
+        <!-- content for right box -->
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="/js/index.js"></script>
+</html>
